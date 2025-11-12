@@ -583,15 +583,3 @@ tail -f /var/log/apache2/error.log
 rm -rf /tmp/sess_*
 ```
 
----
-
-## Contact & Support
-
-For questions or issues with this codebase:
-1. Check this documentation first
-2. Review comments in individual files
-3. Contact the development team
-
-**Last Updated:** May 2025
-**Version:** 1.0
-**Developer:** Study Buddy Team
