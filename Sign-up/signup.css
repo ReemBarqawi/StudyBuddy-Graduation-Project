@@ -1,0 +1,570 @@
+
+ 
+    * {
+      box-sizing: border-box;
+    }
+    .terms-text {
+      margin: 0;
+    }
+
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    }
+
+    .signup-page {
+      background-color: rgba(244, 243, 248, 1);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .signup-layout {
+      display: flex;
+      flex: 1;
+      height: 100%;
+    }
+
+    @media (max-width: 991px) {
+      .signup-layout {
+        flex-direction: column;
+        height: auto;
+      }
+    }
+
+    .form-column, .illustration-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-wrapper {
+      flex: 1;
+      border-radius: 6px;
+      background-color: #fff;
+      box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12);
+      display: flex;
+      padding: 60px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 991px) {
+      .form-wrapper {
+        padding: 40px 20px;
+      }
+    }
+
+    .form-content {
+      display: flex;
+      width: 100%;
+      max-width: 480px;
+      flex-direction: column;
+    }
+
+    .signup-title {
+      color: rgba(32, 82, 133, 1);
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .signup-description {
+      color: rgba(111, 119, 135, 1);
+      font-size: 14px;
+      text-align: center;
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+    }
+
+    .field-label {
+      color: rgba(66, 72, 86, 1);
+      font-weight: 700;
+    }
+
+    .text-input {
+      border-radius: 6px;
+      background-color: rgba(243, 244, 246, 1);
+      border: 1px solid transparent;
+      padding: 10px 12px;
+      margin-top: 5px;
+      color: rgba(23, 26, 31, 1);
+    }
+
+    .password-fields {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+
+
+
+    .role-title {
+      color: rgba(50, 55, 67, 1);
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+
+    .role-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .role-btn {
+      flex: 1;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .role-btn-student {
+      background-color: #fff;
+      color: rgba(32, 82, 133, 1);
+      border: 1px solid rgba(32, 82, 133, 1);
+    }
+
+    .role-btn-buddy {
+      background-color: #fff;
+      color:  rgba(32, 82, 133, 1);
+      border: 1px solid rgba(32, 82, 133, 1);
+    }
+
+    .signin-prompt {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .signin-text {
+      color: rgba(23, 26, 31, 1);
+    }
+
+    .signin-link {
+      color: rgba(65, 145, 238, 1);
+      text-decoration: none;
+    }
+
+    .signup-btn {
+      border-radius: 6px;
+      background-color: rgba(32, 82, 133, 1);
+      color: #fff;
+      border: none;
+      padding: 12px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .illustration-column {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      line-height: normal;
+      width: 50%;
+      margin-left: 0px;
+    }
+
+    @media (max-width: 991px) {
+      .illustration-column {
+        width: 100%;
+      }
+    }
+
+    .illustration-wrapper {
+      background-color: rgba(254, 249, 235, 1);
+      box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12);
+      border: 1px solid rgba(251, 215, 105, 1);
+      display: flex;
+      flex-grow: 1;
+      padding: 0px 100px 26px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      .illustration-wrapper {
+        max-width: 100%;
+        padding: 26px 20px;
+      }
+    }
+
+    .illustration-content {
+      display: flex;
+      width: 486px;
+      max-width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .illustration-main {
+      aspect-ratio: 0.71;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      align-self: flex-start;
+      margin-top: 0;
+    }
+
+    @media (max-width: 991px) {
+      .illustration-main {
+        max-width: 100%;
+      }
+    }
+
+    .illustration-logo {
+      aspect-ratio: 3.97;
+      object-fit: contain;
+      object-position: center;
+      width: 298px;
+      align-self: center;
+      margin-top: 55px;
+      max-width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      .illustration-logo {
+        margin-top: 40px;
+      }
+    }
+      .role-btn.selected {
+        background-color: #205285;
+        color: #fff;
+        border: none;
+      }
+      .role-error-message {
+        color: #d8000c;
+        background-color: #ffd2d2;
+        padding: 12px 16px;
+        margin-top: 10px;
+        border-radius: 6px;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: none;
+        animation: fadeIn 0.3s ease;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .form-error-message {
+        color: #d8000c;
+        background-color: #ffd2d2;
+        padding: 12px 16px;
+        margin-top: 10px;
+        border-radius: 6px;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: none;
+        animation: fadeIn 0.3s ease;
+      }
+
+
+ 
+    * {
+      box-sizing: border-box;
+    }
+    .terms-text {
+      margin: 0;
+    }
+
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    }
+
+    .signup-page {
+      background-color: rgba(244, 243, 248, 1);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .signup-layout {
+      display: flex;
+      flex: 1;
+      height: 100%;
+    }
+
+    @media (max-width: 991px) {
+      .signup-layout {
+        flex-direction: column;
+        height: auto;
+      }
+    }
+
+    .form-column, .illustration-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-wrapper {
+      flex: 1;
+      border-radius: 6px;
+      background-color: #fff;
+      box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12);
+      display: flex;
+      padding: 60px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 991px) {
+      .form-wrapper {
+        padding: 40px 20px;
+      }
+    }
+
+    .form-content {
+      display: flex;
+      width: 100%;
+      max-width: 480px;
+      flex-direction: column;
+    }
+
+    .signup-title {
+      color: rgba(32, 82, 133, 1);
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .signup-description {
+      color: rgba(111, 119, 135, 1);
+      font-size: 14px;
+      text-align: center;
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+    }
+
+    .field-label {
+      color: rgba(66, 72, 86, 1);
+      font-weight: 700;
+    }
+
+    .text-input {
+      border-radius: 6px;
+      background-color: rgba(243, 244, 246, 1);
+      border: 1px solid transparent;
+      padding: 10px 12px;
+      margin-top: 5px;
+      color: rgba(23, 26, 31, 1);
+    }
+
+    .password-fields {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+
+
+
+    .role-title {
+      color: rgba(50, 55, 67, 1);
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+
+    .role-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .role-btn {
+      flex: 1;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .role-btn-student {
+      background-color: #fff;
+      color: rgba(32, 82, 133, 1);
+      border: 1px solid rgba(32, 82, 133, 1);
+    }
+
+    .role-btn-buddy {
+      background-color: #fff;
+      color:  rgba(32, 82, 133, 1);
+      border: 1px solid rgba(32, 82, 133, 1);
+    }
+
+    .signin-prompt {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .signin-text {
+      color: rgba(23, 26, 31, 1);
+    }
+
+    .signin-link {
+      color: rgba(65, 145, 238, 1);
+      text-decoration: none;
+    }
+
+    .signup-btn {
+      border-radius: 6px;
+      background-color: rgba(32, 82, 133, 1);
+      color: #fff;
+      border: none;
+      padding: 12px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .illustration-column {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      line-height: normal;
+      width: 50%;
+      margin-left: 0px;
+    }
+
+    @media (max-width: 991px) {
+      .illustration-column {
+        width: 100%;
+      }
+    }
+
+    .illustration-wrapper {
+      background-color: rgba(254, 249, 235, 1);
+      box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12);
+      border: 1px solid rgba(251, 215, 105, 1);
+      display: flex;
+      flex-grow: 1;
+      padding: 0px 100px 26px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      .illustration-wrapper {
+        max-width: 100%;
+        padding: 26px 20px;
+      }
+    }
+
+    .illustration-content {
+      display: flex;
+      width: 486px;
+      max-width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .illustration-main {
+      aspect-ratio: 0.71;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      align-self: flex-start;
+      margin-top: 0;
+    }
+
+    @media (max-width: 991px) {
+      .illustration-main {
+        max-width: 100%;
+      }
+    }
+
+    .illustration-logo {
+      aspect-ratio: 3.97;
+      object-fit: contain;
+      object-position: center;
+      width: 298px;
+      align-self: center;
+      margin-top: 55px;
+      max-width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      .illustration-logo {
+        margin-top: 40px;
+      }
+    }
+      .role-btn.selected {
+        background-color: #205285;
+        color: #fff;
+        border: none;
+      }
+      .role-error-message {
+        color: #d8000c;
+        background-color: #ffd2d2;
+        padding: 12px 16px;
+        margin-top: 10px;
+        border-radius: 6px;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: none;
+        animation: fadeIn 0.3s ease;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .form-error-message {
+        color: #d8000c;
+        background-color: #ffd2d2;
+        padding: 12px 16px;
+        margin-top: 10px;
+        border-radius: 6px;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: none;
+        animation: fadeIn 0.3s ease;
+      }
+

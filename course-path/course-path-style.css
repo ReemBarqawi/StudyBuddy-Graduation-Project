@@ -1,0 +1,381 @@
+        .learning-path {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px rgba(18, 15, 40, 0.12);
+  padding-bottom: 38px;
+  overflow: hidden;
+}
+
+.header {
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.12);
+  display: flex;
+  width: 100%;
+  padding: 23px 40px 13px;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .header {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.logo-icon {
+  aspect-ratio: 0.69;
+  object-fit: contain;
+  object-position: center;
+  width: 45px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  aspect-ratio: 4.42;
+  object-fit: contain;
+  object-position: center;
+  width: 199px;
+  align-self: start;
+  margin-top: 5px;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.main-nav {
+  background-color: transparent;
+  align-self: start;
+  display: flex;
+  align-items: stretch;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  color: #565d6d;
+  font-weight: 700;
+  line-height: 2;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+@media (max-width: 991px) {
+  .main-nav {
+    max-width: 100%;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 15px 24px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav-link-home {
+  color: #9095a1;
+}
+
+.nav-link-search,
+.nav-link-about {
+  color: #565d6d;
+  font-weight: 400;
+}
+
+.nav-link-profile {
+  color: #2e5b87;
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    padding: 15px 20px;
+    white-space: initial;
+  }
+}
+
+.user-actions {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: stretch;
+  gap: 22px;
+}
+
+.notification-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 36px;
+  flex-shrink: 0;
+}
+
+.user-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 33px;
+  align-self: start;
+  flex-shrink: 0;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 49px;
+  width: 100%;
+  padding: 0 55px;
+  flex-direction: column;
+  align-items: start;
+}
+
+@media (max-width: 991px) {
+  .main-content {
+    max-width: 100%;
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+}
+
+.course-title {
+  color: #171a1f;
+  font-size: 32px;
+  font-family:
+    Archivo,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.content-layout {
+  align-self: stretch;
+  margin-top: 66px;
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .content-layout {
+    max-width: 100%;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+}
+
+.course-content {
+  width: 69%;
+}
+
+@media (max-width: 991px) {
+  .course-content {
+    width: 100%;
+  }
+}
+
+.content-placeholder {
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12);
+  border: 1px dashed #bdc1ca;
+  margin: 0 auto;
+  width: 896px;
+  height: 426px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .content-placeholder {
+    margin-top: 40px;
+  }
+}
+
+.progress-sidebar {
+  width: 31%;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12);
+  padding: 21px 29px;
+}
+
+@media (max-width: 991px) {
+  .progress-sidebar {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+  }
+}
+
+.progress-header {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.progress-title {
+  color: #3290e5;
+  font-size: 20px;
+  font-family:
+    Archivo,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.progress-status {
+  display: flex;
+  margin-top: 4px;
+  align-items: stretch;
+  gap: 11px;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  color: #171a1f;
+}
+
+.progress-fraction {
+  font-weight: 700;
+}
+
+.progress-text {
+  font-weight: 400;
+}
+
+.progress-items {
+  margin-top: 12px;
+}
+
+.progress-item {
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  font-family:
+    Archivo,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  color: #9095a1;
+  font-weight: 700;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.complete-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.comment-section {
+  border-radius: 6px;
+  background-color: #f1f8fd;
+  box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12);
+  margin-top: 39px;
+  width: 888px;
+  max-width: 100%;
+  padding: 15px 19px 46px;
+  font-family:
+    Open Sans,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.comment-title {
+  color: #2e5b87;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.comment-actions {
+  aspect-ratio: 5;
+  object-fit: contain;
+  object-position: center;
+  width: 115px;
+  margin: auto 0;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.comment-input {
+  border-radius: 6px;
+  border: 1px solid #2e5b87;
+  margin-top: 21px;
+  padding: 8px 12px 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-placeholder {
+  color: #bdc1ca;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.input-actions {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 12px;
+  align-self: flex-end;
+  margin-top: 25px;
+}
+
+.main-content { max-width: 1200px; margin: auto; }
+.content-layout { display: flex; gap: 20px; }
+.course-content { flex: 2; }
+.progress-sidebar { flex: 1; background: #fff; padding: 20px; border: 1px solid #ccc; }
+.content-placeholder { border: 1px dashed #bbb; padding: 20px; min-height: 200px; }
+.progress-item { display: flex; justify-content: space-between; margin: 10px 0; }
+.complete-icon { width: 16px; height: 16px; }
+.comment-section { background: #f1f8fd; margin-top: 40px; padding: 20px; }
