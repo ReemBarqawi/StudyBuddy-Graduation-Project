@@ -3,10 +3,10 @@ include '../includes/db_connect.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST["email"]);
 
-    // الاتصال بقاعدة البيانات
+
     include('../includes/db.php');
 
-    // التحقق من وجود المستخدم
+ 
     $check_query = "SELECT * FROM users WHERE Email = ?";
     $stmt = mysqli_prepare($conn, $check_query);
     mysqli_stmt_bind_param($stmt, "s", $email);
@@ -16,14 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mysqli_num_rows($result) === 1) {
         $reset_code = rand(100000, 999999);
 
-        // تحديث كود الاستعادة في قاعدة البيانات
+    
         $update = "UPDATE users SET reset_code = ? WHERE Email = ?";
         $stmt = mysqli_prepare($conn, $update);
         mysqli_stmt_bind_param($stmt, "ss", $reset_code, $email);
         mysqli_stmt_execute($stmt);
 
-        // إرسال الكود بالإيميل (تضيف هنا كود PHPMailer لاحقًا)
-        // للتجربة فقط نعرض الكود مباشرة
+
         $successMessage = "✅ A verification code has been sent to your email (for now: $reset_code)";
         header("Location: verify_reset_code.php?email=" . urlencode($email));
         exit();

@@ -12,7 +12,7 @@ $successMessage = $errorMessage = '';
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST['email']);
 
-    // تحقق من وجود المستخدم
+ 
     $query = "SELECT * FROM users WHERE Email = ?";
     $stmt = mysqli_prepare($conn, $query);
     mysqli_stmt_bind_param($stmt, "s", $email);
@@ -22,13 +22,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (mysqli_num_rows($result) === 1) {
         $reset_code = rand(100000, 999999);
 
-        // تحديث كود التحقق في قاعدة البيانات
+        
         $update = "UPDATE users SET reset_code = ? WHERE Email = ?";
         $stmt = mysqli_prepare($conn, $update);
         mysqli_stmt_bind_param($stmt, "ss", $reset_code, $email);
         mysqli_stmt_execute($stmt);
 
-        // إرسال الإيميل
+
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();

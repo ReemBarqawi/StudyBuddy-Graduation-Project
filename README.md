@@ -1,8 +1,12 @@
 <p align="center">
-  <img src="uploads/content/logo.png" alt="Study Buddy Logo" width="200">
+  <img src="uploads/content/logo.png" alt="Study Buddy Logo" width="150">
 </p>
 
 <h1 align="center">🎓 Study Buddy – Student & Tutor Platform</h1>
+
+<p align="center">
+  🌐 <a href="https://studybuddy.wuaze.com/landingpage/landingpage.php" target="_blank">Visit the Live Website</a>
+</p>
 
 ## 📘 Overview
 **Study Buddy** is a **web-based learning management system (LMS)** that connects students with tutors (called **Buddies**) to create a collaborative learning environment.  

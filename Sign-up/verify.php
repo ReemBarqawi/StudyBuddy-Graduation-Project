@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST['email']);
     $code = trim($_POST['verification_code']);
 
-    // تحقق من وجود المستخدم والكود
+ 
     $query = "SELECT verification_code FROM users WHERE Email = ?";
     $stmt = mysqli_prepare($conn, $query);
     mysqli_stmt_bind_param($stmt, "s", $email);
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $db_code = $user['verification_code'];
 
         if ($code === $db_code) {
-            // تحديث حالة التحقق
+
             $update = "UPDATE users SET is_verified = 1, verification_code = NULL WHERE Email = ?";
             $stmt = mysqli_prepare($conn, $update);
             mysqli_stmt_bind_param($stmt, "s", $email);
